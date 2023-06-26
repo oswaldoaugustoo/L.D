@@ -36,7 +36,7 @@ const buscarRegistro = id => {
     })
   })
 }
-
+  
 const valorHora = 2
 const valorMinuto = valorHora / 60
 

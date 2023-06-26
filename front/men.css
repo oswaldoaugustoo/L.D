@@ -33,4 +33,60 @@ body {
   padding: 20px;
 }
 
-  
+button {
+  background-color: #232323;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1e7d90;
+}
+
+button.salvar {
+  background-color: #2055ab;
+}
+
+button.cancelar {
+  background-color: #ec0707;
+}
+.animated-input {
+  border: none;
+  border-bottom: 0px solid #ccc;
+  font-size: 18px;
+  padding: 5px;
+  transition: border-bottom-color 0.3s;
+}
+s
+.animated-input:focus {
+  border-bottom-color: blue;
+}
+
+.animated-input:focus::placeholder {
+  color: blue;
+}
+
+.animated-input:focus + label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: blue;
+  transition: transform 0.3s, font-size 0.3s, color 0.3s;
+}
+
+label {
+  position: relative;
+  top: -15px;
+  left: 5px;
+  font-size: 18px;
+  color: #ccc;
+  transition: transform 0.3s, font-size 0.3s, color 0.3s;
+}
+ 

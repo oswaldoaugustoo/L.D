@@ -9,17 +9,13 @@ body {
   color: #fff;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
 }
 
 #link img {
   height: 40px;
   margin-right: 10px;
-}
-
-#link div {
-  display: flex;
-  align-items: center;
 }
 
 #link a {
@@ -31,6 +27,66 @@ body {
 #root {
   padding: 20px;
 }
+
+button {
+  background-color: #232323;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1e7d90;
+}
+
+button.salvar {
+  background-color: #2055ab;
+}
+
+button.cancelar {
+  background-color: #ec0707;
+}
+
+.animated-input {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 18px;
+  padding: 5px;
+  width: 300px;
+  transition: border-bottom-color 0.3s;
+}
+
+.animated-input:focus {
+  border-bottom-color: #2055ab;
+}
+
+.animated-input:focus::placeholder {
+  color: #2055ab;
+}
+
+.animated-input:focus + label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #2055ab;
+  transition: transform 0.3s, font-size 0.3s, color 0.3s;
+}
+
+label {
+  position: relative;
+  top: -15px;
+  left: 5px;
+  font-size: 18px;
+  color: #ccc;
+  transition: transform 0.3s, font-size 0.3s, color 0.3s;
+}
+
 
   
   
